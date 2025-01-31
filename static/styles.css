@@ -1,0 +1,66 @@
+/* Dark blue background with light text */
+body {
+    background-color: #0a192f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Center content */
+.container {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* Card styling */
+.card {
+    background-color: #112240;
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Heading styles */
+h2, h3 {
+    color: #ddb100;
+    text-align: center;
+}
+
+/* List styling */
+.list-group-item {
+    background-color: #112240;
+    color: #ffffff;
+    border: 1px solid #ddb100;
+}
+
+/* Input and button styles */
+.form-control {
+    background-color: #233554;
+    color: #ffffff;
+    border: 1px solid #ddb100;
+}
+
+.form-control::placeholder {
+    color: #a8b2d1;
+}
+
+.btn {
+    background-color: #ddb100;
+    color: #0a192f;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ddb100;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
