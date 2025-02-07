@@ -1,0 +1,127 @@
+Question Number,Question,Answer 1,Answer 2,Answer 3,Answer 4,Answer 5,Answer 6,Correct Answers,Time Allotted to Answer (seconds),Player,Answer,Correct / Incorrect,Correct,Incorrect,Score (points),Score without Answer Streak Bonus (points),Current Total Score (points),Answer Time (%),Answer Time (seconds)
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Adam Groves,True,Correct,1,0,954,954,954,9.28%,1.856
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Austin Driggs,True,Correct,1,0,960,960,960,8.06%,1.611
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Chris Piwowar,True,Correct,1,0,958,958,958,8.43%,1.686
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Dominick Beckmn,True,Correct,1,0,745,745,745,51.03%,10.205
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Ethan Grose,True,Correct,1,0,968,968,968,6.43%,1.286
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Greyson Miller,False,Incorrect,0,1,0,0,0,44.77%,8.954
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Jonathan Dofka,True,Correct,1,0,972,972,972,5.61%,1.121
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Kate Jacobs,True,Correct,1,0,877,877,877,24.67%,4.933
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Liam Stirling,True,Correct,1,0,684,684,684,63.18%,12.636
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Peter S,True,Correct,1,0,976,976,976,4.78%,0.956
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Philip Starnes,True,Correct,1,0,941,941,941,11.83%,2.365
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Robert Dodge,True,Correct,1,0,980,980,980,3.91%,0.781
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Ryan DiBacco,True,Correct,1,0,793,793,793,41.38%,8.275
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Ryan Duckworth,True,Correct,1,0,971,971,971,5.80%,1.159
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Sam Moody,True,Correct,1,0,975,975,975,5.03%,1.005
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Thomas pipo,,Incorrect,0,1,0,0,0,100.00%,20
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,Tucker wilson,False,Incorrect,0,1,0,0,0,31.21%,6.242
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,cbm00002,False,Incorrect,0,1,0,0,0,38.92%,7.783
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,hth00001,True,Correct,1,0,970,970,970,5.98%,1.195
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,nwk00004,True,Correct,1,0,883,883,883,23.38%,4.676
+1 Quiz,The voltage regulation is positive when transformer is supplying inductive load.,True,False,,,,,True,20,sal00016,True,Correct,1,0,952,952,952,9.65%,1.93
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Adam Groves,False,Correct,1,0,974,974,1928,5.12%,1.024
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Austin Driggs,False,Correct,1,0,982,982,1942,3.55%,0.709
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Chris Piwowar,True,Incorrect,0,1,0,0,958,4.88%,0.975
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Dominick Beckmn,False,Correct,1,0,918,918,1663,16.31%,3.262
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Ethan Grose,False,Correct,1,0,926,926,1894,14.77%,2.955
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Greyson Miller,False,Correct,1,0,880,880,880,24.04%,4.807
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Jonathan Dofka,False,Correct,1,0,1000,1000,1972,1.00%,0.199
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Kate Jacobs,False,Correct,1,0,979,979,1856,4.14%,0.828
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Liam Stirling,False,Correct,1,0,667,667,1351,66.57%,13.313
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Peter S,False,Correct,1,0,977,977,1953,4.51%,0.901
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Philip Starnes,True,Incorrect,0,1,0,0,941,62.73%,12.546
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Robert Dodge,False,Correct,1,0,847,847,1827,30.55%,6.11
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Ryan DiBacco,False,Correct,1,0,934,934,1727,13.20%,2.64
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Ryan Duckworth,True,Incorrect,0,1,0,0,971,17.07%,3.414
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Sam Moody,False,Correct,1,0,969,969,1944,6.15%,1.229
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Thomas pipo,,Incorrect,0,1,0,0,0,100.00%,20
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,Tucker wilson,True,Incorrect,0,1,0,0,0,6.74%,1.348
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,cbm00002,True,Incorrect,0,1,0,0,0,24.63%,4.926
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,hth00001,False,Correct,1,0,967,967,1937,6.56%,1.312
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,nwk00004,False,Correct,1,0,969,969,1852,6.30%,1.259
+2 Quiz,"Under resistive loading of a transformer, the voltage regulation is zero.",True,False,,,,,False,20,sal00016,False,Correct,1,0,939,939,1891,12.11%,2.421
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Adam Groves,True,Correct,1,0,970,970,2898,6.09%,1.218
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Austin Driggs,True,Correct,1,0,984,984,2926,3.18%,0.635
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Chris Piwowar,True,Correct,1,0,966,966,1924,6.90%,1.38
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Dominick Beckmn,True,Correct,1,0,846,846,2509,30.76%,6.153
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Ethan Grose,False,Incorrect,0,1,0,0,1894,5.52%,1.103
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Greyson Miller,False,Incorrect,0,1,0,0,880,6.39%,1.277
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Jonathan Dofka,True,Correct,1,0,1000,1000,2972,1.28%,0.255
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Kate Jacobs,True,Correct,1,0,973,973,2829,5.31%,1.062
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Liam Stirling,True,Correct,1,0,735,735,2086,53.02%,10.604
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Peter S,True,Correct,1,0,972,972,2925,5.51%,1.102
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Philip Starnes,True,Correct,1,0,934,934,1875,13.14%,2.627
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Robert Dodge,True,Correct,1,0,957,957,2784,8.54%,1.707
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Ryan DiBacco,True,Correct,1,0,959,959,2686,8.18%,1.636
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Ryan Duckworth,True,Correct,1,0,979,979,1950,4.23%,0.845
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Sam Moody,True,Correct,1,0,984,984,2928,3.21%,0.642
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Thomas pipo,,Incorrect,0,1,0,0,0,100.00%,20
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,Tucker wilson,False,Incorrect,0,1,0,0,0,14.09%,2.819
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,cbm00002,False,Incorrect,0,1,0,0,0,7.91%,1.582
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,hth00001,True,Correct,1,0,976,976,2913,4.89%,0.977
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,nwk00004,True,Correct,1,0,982,982,2834,3.69%,0.737
+3 Quiz,"Under capacitive loading of a transformer, the voltage regulation is negative.",True,False,,,,,True,20,sal00016,True,Correct,1,0,978,978,2869,4.35%,0.87
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Adam Groves,False,Incorrect,0,1,0,0,2898,67.38%,13.477
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Austin Driggs,True,Correct,1,0,985,985,3911,2.93%,0.586
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Chris Piwowar,True,Correct,1,0,905,905,2829,19.07%,3.814
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Dominick Beckmn,True,Correct,1,0,976,976,3485,4.71%,0.942
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Ethan Grose,True,Correct,1,0,1000,1000,2894,2.28%,0.455
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Greyson Miller,True,Correct,1,0,870,870,1750,26.08%,5.216
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Jonathan Dofka,True,Correct,1,0,948,948,3920,10.38%,2.076
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Kate Jacobs,True,Correct,1,0,874,874,3703,25.12%,5.024
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Liam Stirling,True,Correct,1,0,959,959,3045,8.11%,1.622
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Peter S,True,Correct,1,0,968,968,3893,6.47%,1.294
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Philip Starnes,True,Correct,1,0,869,869,2744,26.14%,5.227
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Robert Dodge,True,Correct,1,0,1000,1000,3784,2.48%,0.496
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Ryan DiBacco,True,Correct,1,0,910,910,3596,18.08%,3.615
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Ryan Duckworth,True,Correct,1,0,935,935,2885,12.96%,2.593
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Sam Moody,True,Correct,1,0,986,986,3914,2.73%,0.545
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Thomas pipo,False,Incorrect,0,1,0,0,0,4.58%,0.915
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,Tucker wilson,True,Correct,1,0,974,974,974,5.26%,1.052
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,cbm00002,True,Correct,1,0,906,906,906,18.72%,3.743
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,hth00001,True,Correct,1,0,878,878,3791,24.47%,4.894
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,nwk00004,True,Correct,1,0,782,782,3616,43.60%,8.719
+4 Quiz,The voltage regulation is the quantity that compares the no-load voltage to transformers full load voltage.,True,False,,,,,True,20,sal00016,True,Correct,1,0,971,971,3840,5.76%,1.152
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Adam Groves,Load Current Is is leading Vs,Correct,1,0,873,873,3771,25.44%,7.631
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Austin Driggs,Load Current Is is leading Vs,Correct,1,0,936,936,4847,12.89%,3.868
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Chris Piwowar,Load Current Is is leading Vs,Correct,1,0,577,577,3406,84.66%,25.398
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Dominick Beckmn,Load Current Is is leading Vs,Correct,1,0,913,913,4398,17.43%,5.229
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Ethan Grose,Load Current Is is leading Vs,Correct,1,0,793,793,3687,41.41%,12.423
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Greyson Miller,Load Current Is is leading Vs,Correct,1,0,869,869,2619,26.15%,7.846
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Jonathan Dofka,Load Current Is is leading Vs,Correct,1,0,800,800,4720,39.98%,11.993
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Kate Jacobs,None of the above,Incorrect,0,1,0,0,3703,91.44%,27.433
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Liam Stirling,Load Current Is is leading Vs,Correct,1,0,590,590,3635,82.09%,24.628
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Peter S,Load Current Is is leading Vs,Correct,1,0,858,858,4751,28.50%,8.55
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Philip Starnes,Load Current Is is leading Vs,Correct,1,0,741,741,3485,51.72%,15.516
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Robert Dodge,Load Current Is is leading Vs,Correct,1,0,939,939,4723,12.17%,3.65
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Ryan DiBacco,Load Current Is is leading Vs,Correct,1,0,679,679,4275,64.24%,19.271
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Ryan Duckworth,Load Current Is is leading Vs,Correct,1,0,800,800,3685,40.05%,12.015
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Sam Moody,Load Current Is is leading Vs,Correct,1,0,879,879,4793,24.13%,7.239
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Thomas pipo,Load Current Is is leading Vs,Correct,1,0,968,968,968,6.47%,1.94
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,Tucker wilson,Load Current Is is leading Vs,Correct,1,0,723,723,1697,55.34%,16.602
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,cbm00002,None of the above,Incorrect,0,1,0,0,906,24.16%,7.248
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,hth00001,Load Current Is is lagging Vs,Incorrect,0,1,0,0,3791,53.58%,16.073
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,nwk00004,Load Current Is is leading Vs,Correct,1,0,691,691,4307,61.84%,18.551
+5 Quiz,"Under which loading condition, the voltage Vp/a is smaller than Vs.",Load Current Is is lagging Vs,Load Current Is is in phase with Vs,Load Current Is is leading Vs,None of the above,,,Load Current Is is leading Vs,30,sal00016,Load Current Is is leading Vs,Correct,1,0,867,867,4707,26.69%,8.006
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Adam Groves,"Req, Rc/a2",Correct,1,0,544,544,4315,91.24%,27.373
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Austin Driggs,Req,Incorrect,0,1,409,409,5256,36.40%,10.919
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Chris Piwowar,"Req, Rc/a2",Correct,1,0,775,775,4181,45.08%,13.523
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Dominick Beckmn,"jXeq, Req",Incorrect,0,1,0,0,4398,41.95%,12.584
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Ethan Grose,"jXeq, jXm/a2, Rc/a2",Incorrect,0,1,0,0,3687,50.33%,15.1
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Greyson Miller,"Req, Rc/a2",Correct,1,0,730,730,3349,53.98%,16.193
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Jonathan Dofka,"Req, Rc/a2",Correct,1,0,869,869,5589,26.20%,7.861
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Kate Jacobs,jXm/a2,Incorrect,0,1,0,0,3703,53.09%,15.927
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Liam Stirling,"Req, Rc/a2",Correct,1,0,617,617,4252,76.56%,22.967
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Peter S,"Req, Rc/a2",Correct,1,0,836,836,5587,32.84%,9.852
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Philip Starnes,"jXeq, jXm/a2",Incorrect,0,1,0,0,3485,36.42%,10.926
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Robert Dodge,"jXeq, Req",Incorrect,0,1,0,0,4723,86.81%,26.043
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Ryan DiBacco,"Req, Rc/a2",Correct,1,0,666,666,4941,66.83%,20.05
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Ryan Duckworth,"jXeq, Req",Incorrect,0,1,0,0,3685,57.19%,17.157
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Sam Moody,"Req, Rc/a2",Correct,1,0,875,875,5668,25.01%,7.503
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Thomas pipo,"jXeq, Rc/a2",Incorrect,0,1,0,0,968,20.85%,6.256
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,Tucker wilson,"Req, Rc/a2",Correct,1,0,939,939,2636,12.21%,3.662
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,cbm00002,"jXeq, Req",Incorrect,0,1,0,0,906,81.18%,24.353
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,hth00001,"jXeq, Req",Incorrect,0,1,0,0,3791,55.83%,16.75
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,nwk00004,"Req, Rc/a2",Correct,1,0,910,910,5217,18.09%,5.426
+6 Quiz,Identify the elements in the transformer equivalent circuit that contributes to real power losses.,jXeq,jXm/a2,Req,Rc/a2,,,"Req, Rc/a2",30,sal00016,"Req, Rc/a2",Correct,1,0,840,840,5547,31.92%,9.577
