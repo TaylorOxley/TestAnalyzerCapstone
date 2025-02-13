@@ -11,15 +11,18 @@
     <div class="container mt-5">
         <div class="card shadow p-4">
             <h2 class="text-center">{{ player }}'s Test Results</h2>
+            
+            <h4 class="text-primary mt-3">Score: {{ percentage|round(2) }}%</h4>
+            <h4 class="text-info">Grade: <span class="fw-bold">{{ grade }}</span></h4>
 
-            <h3 class="text-success mt-3">Correctly Answered Questions</h3>
+            <h3 class="text-success mt-3">Correct Answers</h3>
             <ul class="list-group my-3">
                 {% for question in correct %}
                     <li class="list-group-item">{{ question }}</li>
                 {% endfor %}
             </ul>
 
-            <h3 class="text-danger mt-4">Incorrectly Answered Questions</h3>
+            <h3 class="text-danger mt-4">Incorrect Answers</h3>
             <ul class="list-group my-3">
                 {% for question in incorrect %}
                     <li class="list-group-item">{{ question }}</li>
