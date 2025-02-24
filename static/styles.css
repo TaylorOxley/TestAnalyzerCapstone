@@ -58,9 +58,18 @@ h2, h3 {
     background-color: #ddb100;
 }
 
+.grade-text {
+    color: #FFD700; /* Gold/Yellow */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
 /* Responsive design */
 @media (max-width: 768px) {
     .container {
         width: 90%;
     }
+
+    
 }
