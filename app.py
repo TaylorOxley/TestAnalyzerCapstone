@@ -1,8 +1,10 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect, url_for, flash
 import pandas as pd
 import os
+import smtplib
 
 app = Flask(__name__)
+app.secret_key = "your_secret_key"  # Needed for flashing messages
 
 UPLOAD_FOLDER = 'test_data'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -70,6 +72,32 @@ def analyze_results():
         grade=grade
     )
 
+@app.route("/send_email", methods=["POST"])
+def send_email():
+    sender_email = request.form["sender_email"]
+    receiver_email = request.form["receiver_email"]
+    subject = request.form["subject"]
+    message = request.form["message"]
+
+    email_text = f"Subject: {subject}\n\n{message}"
+
+    try:
+        server = smtplib.SMTP("smtp.gmail.com", 587)
+        server.starttls()
+        server.login(sender_email, "vphkegrbwhpntqeo")  # Use App Passwords
+        server.sendmail(sender_email, receiver_email, email_text)
+        server.quit()
+
+        return redirect(url_for("email_confirmation", receiver_email=receiver_email))
+
+    except Exception as e:
+        flash(f"Error sending email: {e}", "danger")
+        return redirect(url_for("upload_file"))
+
+@app.route("/email_confirmation")
+def email_confirmation():
+    receiver_email = request.args.get("receiver_email", "No email provided")
+    return render_template("confirmation.html", receiver_email=receiver_email)
 
 if __name__ == "__main__":
     app.run(debug=True)

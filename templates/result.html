@@ -11,10 +11,9 @@
     <div class="container mt-5">
         <div class="card shadow p-4">
             <h2 class="text-center">{{ player }}'s Test Results</h2>
-            
+
             <h4 class="mt-3">Score: <span class="grade-text">{{ percentage|round(2) }}%</span></h4>
             <h4>Grade: <span class="grade-text">{{ grade }}</span></h4>
-
 
             <h3 class="text-success mt-3">Correct Answers</h3>
             <ul class="list-group my-3">
@@ -23,7 +22,7 @@
                 {% endfor %}
             </ul>
 
-            <h3 class="text-danger mt-4">Incorrect Answers (with Correct Responses)</h3>
+            <h3 class="text-danger mt-4">Incorrect Answers (with Correct Answers)</h3>
             <ul class="list-group my-3">
                 {% for item in incorrect %}
                     <li class="list-group-item">
@@ -32,6 +31,27 @@
                     </li>
                 {% endfor %}
             </ul>
+
+            <h3 class="text-primary mt-4">Send Results via Email</h3>
+            <form action="{{ url_for('send_email') }}" method="post" class="mt-3">
+                <div class="mb-3">
+                    <label for="sender_email" class="form-label">Your Email:</label>
+                    <input type="email" class="form-control" id="sender_email" name="sender_email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="receiver_email" class="form-label">Recipient Email:</label>
+                    <input type="email" class="form-control" id="receiver_email" name="receiver_email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject:</label>
+                    <input type="text" class="form-control" id="subject" name="subject" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning">Send Email</button>
+            </form>
         </div>
     </div>
 </body>
