@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Test Results</title>
+    <title>Upload File</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
-<body class="bg-light">
+<body>
     <div class="container mt-5">
-        <div class="card shadow p-4">
-            <h2 class="text-center">Upload a CSV File</h2>
-            <form action="/" method="post" enctype="multipart/form-data" class="text-center">
-                <input type="file" name="file" class="form-control my-3" required accept=".csv">
-                <button type="submit" class="btn btn-primary">Upload</button>
+        <div class="card p-4 shadow">
+            <h2 class="text-center">Upload Student Test Results</h2>
+            <form action="/" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="file" class="form-label">Select a CSV File:</label>
+                    <input type="file" name="file" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Upload</button>
             </form>
         </div>
     </div>
