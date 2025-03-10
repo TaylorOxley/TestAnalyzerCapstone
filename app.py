@@ -36,17 +36,19 @@ def analyze_results():
     df = pd.read_csv(filepath)
     student_data = df[df["Player"] == player_name]
 
-    # Get unique correct questions
-    correct_answers = student_data[student_data["Correct / Incorrect"] == "Correct"]["Question"].unique().tolist()
+    # Get correct questions along with their correct answers
+    correct_rows = student_data[student_data["Correct / Incorrect"] == "Correct"]
+    correct_answers = [
+        {"question": row["Question"], "correct_answer": row["Correct Answers"]}
+        for _, row in correct_rows.iterrows()
+    ]
 
-    # Get incorrect questions with correct answers
+    # Get incorrect questions along with their correct answers
     incorrect_rows = student_data[student_data["Correct / Incorrect"] == "Incorrect"]
-    incorrect_answers = []
-    for _, row in incorrect_rows.iterrows():
-        incorrect_answers.append({
-            "question": row["Question"],
-            "correct_answer": row["Correct Answers"]
-        })
+    incorrect_answers = [
+        {"question": row["Question"], "correct_answer": row["Correct Answers"]}
+        for _, row in incorrect_rows.iterrows()
+    ]
 
     # Calculate percentage and grade
     total_questions = len(correct_answers) + len(incorrect_answers)
@@ -88,6 +90,7 @@ def send_email():
         server.sendmail(sender_email, receiver_email, email_text)
         server.quit()
 
+        # Redirect to confirmation page after successful email
         return redirect(url_for("email_confirmation", receiver_email=receiver_email))
 
     except Exception as e:
