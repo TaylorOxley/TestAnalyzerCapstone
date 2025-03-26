@@ -11,18 +11,12 @@
     <div class="container mt-5">
         <div class="card p-4 shadow">
             <h2 class="text-center">Select a Player</h2>
-            <form action="/analyze" method="post">
-                <input type="hidden" name="filepath" value="{{ filepath }}">
-                <div class="mb-3">
-                    <label for="player" class="form-label">Choose a player:</label>
-                    <select name="player" class="form-select" required>
-                        {% for player in players %}
-                            <option value="{{ player }}">{{ player }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">View Results</button>
-            </form>
+            <ul class="list-group">
+                {% for player in players %}
+                    <li class="list-group-item text-warning">{{ player }}</li>
+                {% endfor %}
+            </ul>
+            <a href="{{ url_for('analyze_results') }}" class="btn btn-primary w-100 mt-4">Analyze Results</a>
         </div>
     </div>
 </body>

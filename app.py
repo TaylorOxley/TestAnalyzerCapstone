@@ -1,78 +1,84 @@
-from flask import Flask, request, render_template, redirect, url_for, flash
+from flask import Flask, render_template, request
 import pandas as pd
-import os
 import smtplib
 
 app = Flask(__name__)
-app.secret_key = "your_secret_key"  # Needed for flashing messages
 
-UPLOAD_FOLDER = 'test_data'
-os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+# Store uploaded file path
+uploaded_file_path = None
 
 @app.route("/", methods=["GET", "POST"])
 def upload_file():
+    global uploaded_file_path
     if request.method == "POST":
         file = request.files["file"]
         if file:
-            filepath = os.path.join(UPLOAD_FOLDER, file.filename)
-            file.save(filepath)
+            uploaded_file_path = "uploaded_file.csv"
+            file.save(uploaded_file_path)
 
-            # Read CSV and validate columns
-            df = pd.read_csv(filepath)
-            expected_columns = {'Question', 'Correct Answers', 'Player', 'Correct / Incorrect'}
-            if not expected_columns.issubset(set(df.columns)):
-                return f"Invalid file format. Expected columns: {expected_columns}"
-
-            players = df['Player'].unique().tolist()
-            return render_template("select_player.html", players=players, filepath=file.filename)
-
+            # Redirect to select player page after file is uploaded
+            return select_player()
     return render_template("upload.html")
 
-@app.route("/analyze", methods=["POST"])
+@app.route("/select_player")
+def select_player():
+    if not uploaded_file_path:
+        return render_template("upload.html")
+
+    df = pd.read_csv(uploaded_file_path)
+    players = df["Player"].unique().tolist()  # Extract unique players
+    return render_template("select_player.html", players=players)
+
+@app.route("/analyze_results", methods=["GET", "POST"])
 def analyze_results():
-    player_name = request.form["player"]
-    filepath = os.path.join(UPLOAD_FOLDER, request.form["filepath"])
+    if not uploaded_file_path:
+        return render_template("upload.html")
 
-    df = pd.read_csv(filepath)
-    student_data = df[df["Player"] == player_name]
+    df = pd.read_csv(uploaded_file_path)
 
-    # Get correct questions along with their correct answers
-    correct_rows = student_data[student_data["Correct / Incorrect"] == "Correct"]
-    correct_answers = [
-        {"question": row["Question"], "correct_answer": row["Correct Answers"]}
-        for _, row in correct_rows.iterrows()
-    ]
+    results = {}
 
-    # Get incorrect questions along with their correct answers
-    incorrect_rows = student_data[student_data["Correct / Incorrect"] == "Incorrect"]
-    incorrect_answers = [
-        {"question": row["Question"], "correct_answer": row["Correct Answers"]}
-        for _, row in incorrect_rows.iterrows()
-    ]
+    for player in df["Player"].unique():
+        player_df = df[df["Player"] == player]
 
-    # Calculate percentage and grade
-    total_questions = len(correct_answers) + len(incorrect_answers)
-    correct_percentage = (len(correct_answers) / total_questions) * 100 if total_questions > 0 else 0
+        correct_answers = []
+        incorrect_answers = []
 
-    if correct_percentage >= 90:
-        grade = "A"
-    elif correct_percentage >= 80:
-        grade = "B"
-    elif correct_percentage >= 70:
-        grade = "C"
-    elif correct_percentage >= 60:
-        grade = "D"
-    else:
-        grade = "F"
+        for _, row in player_df.iterrows():
+            question = row["Question"]
+            correct_answer = row["Correct Answers"]
+            is_correct = row["Correct / Incorrect"]
 
-    return render_template(
-        "result.html",
-        player=player_name,
-        correct=correct_answers,
-        incorrect=incorrect_answers,
-        percentage=correct_percentage,
-        grade=grade
-    )
+            if is_correct.strip().lower() == "correct":
+                correct_answers.append((question, correct_answer))
+            elif is_correct.strip().lower() == "incorrect":
+                incorrect_answers.append((question, correct_answer))
+
+        total_questions = len(correct_answers) + len(incorrect_answers)
+        percentage = (len(correct_answers) / total_questions) * 100 if total_questions > 0 else 0
+
+        # Assign grade based on percentage
+        if percentage >= 90:
+            grade = "A"
+        elif percentage >= 80:
+            grade = "B"
+        elif percentage >= 70:
+            grade = "C"
+        elif percentage >= 60:
+            grade = "D"
+        else:
+            grade = "F"
+
+        results[player] = {
+            "correct": correct_answers,
+            "incorrect": incorrect_answers,
+            "percentage": round(percentage, 2),
+            "grade": grade
+        }
+
+    return render_template("result.html", results=results)
+
+
 
 @app.route("/send_email", methods=["POST"])
 def send_email():
@@ -86,21 +92,12 @@ def send_email():
     try:
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
-        server.login(sender_email, "vphkegrbwhpntqeo")  # Use App Passwords
+        server.login(sender_email, "vphkegrbwhpntqeo")
         server.sendmail(sender_email, receiver_email, email_text)
         server.quit()
-
-        # Redirect to confirmation page after successful email
-        return redirect(url_for("email_confirmation", receiver_email=receiver_email))
-
+        return render_template("confirmation.html", receiver_email=receiver_email)
     except Exception as e:
-        flash(f"Error sending email: {e}", "danger")
-        return redirect(url_for("upload_file"))
-
-@app.route("/email_confirmation")
-def email_confirmation():
-    receiver_email = request.args.get("receiver_email", "No email provided")
-    return render_template("confirmation.html", receiver_email=receiver_email)
+        return f"Error sending email: {e}"
 
 if __name__ == "__main__":
     app.run(debug=True)

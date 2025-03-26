@@ -18,6 +18,17 @@
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Upload</button>
             </form>
+
+            {% if players %}
+                <div class="mt-4">
+                    <h3 class="text-center text-warning">Recognized Players</h3>
+                    <ul class="list-group">
+                        {% for player in players %}
+                            <li class="list-group-item text-warning">{{ player }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
         </div>
     </div>
 </body>
