@@ -92,7 +92,7 @@ def send_email():
     try:
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
-        server.login(sender_email, "vphkegrbwhpntqeo")
+        server.login(sender_email, "kvnrwezgvridcixy")
         server.sendmail(sender_email, receiver_email, email_text)
         server.quit()
         return render_template("confirmation.html", receiver_email=receiver_email)

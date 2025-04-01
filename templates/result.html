@@ -52,16 +52,19 @@
         <!-- Email Form -->
         <div class="card bg-white text-dark p-4 shadow-lg border-0 rounded">
             <h3 class="text-warning text-center">Send Results via Email</h3>
-            <form action="{{ url_for('send_email') }}" method="POST">
+            <form action="{{ url_for('send_email') }}" method="POST" onsubmit="formatEmail()">
                 <!-- Hardcoded sender email -->
                 <div class="mb-3">
                     <label for="sender_email" class="form-label text-dark">Your Email</label>
-                    <input type="email" id="sender_email" name="sender_email" class="form-control bg-light text-dark border-0" value="tayloroxley12@gmail.com" readonly>
+                    <input type="email" id="sender_email" name="sender_email" class="form-control bg-light text-dark border-0" value="testanalyzercapstone1@gmail.com" readonly>
                 </div>
+                
+                <!-- Recipient Email (Mix Username Only) -->
                 <div class="mb-3">
-                    <label for="receiver_email" class="form-label text-dark">Recipient Email</label>
-                    <input type="email" id="receiver_email" name="receiver_email" class="form-control bg-light text-dark border-0" required>
+                    <label for="receiver_email" class="form-label text-dark">Recipient MIX Username</label>
+                    <input type="text" id="receiver_email" name="receiver_email" class="form-control bg-light text-dark border-0" placeholder="Enter Mix username (e.g., tjo00004)" required>
                 </div>
+                
                 <div class="mb-3">
                     <label for="subject" class="form-label text-dark">Subject</label>
                     <input type="text" id="subject" name="subject" class="form-control bg-light text-dark border-0" value="Test Results Summary" required>
@@ -79,5 +82,18 @@
             <a href="{{ url_for('upload_file') }}" class="btn btn-primary btn-lg">Upload Another File</a>
         </div>
     </div>
+
+    <script>
+        function formatEmail() {
+            let emailInput = document.getElementById("receiver_email");
+            let mixUsername = emailInput.value.trim();
+            
+            // Ensure the entered value is not already a full email
+            if (!mixUsername.includes("@")) {
+                emailInput.value = mixUsername + "@mix.wvu.edu";
+            }
+        }
+    </script>
+
 </body>
 </html>
