@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Sent</title>
+    <title>Email Confirmation</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
-<body>
-    <div class="container text-center mt-5">
-        <div class="alert alert-success">
-            <h2>Email Sent Successfully!</h2>
-            <p>Your test results have been sent.</p>
+<body class="bg-darkblue text-light">
+    <div class="container mt-5">
+        <div class="card p-5 bg-white text-center text-dark shadow-lg border-0 rounded">
+            <h1 class="text-success">✅ Email Sent Successfully!</h1>
+            <p class="lead">The test results have been emailed to the recipient.</p>
+
+            <!-- Back to Upload Page -->
+            <a href="{{ url_for('upload_file') }}" class="btn btn-primary btn-lg mt-3 me-2">Upload Another File</a>
+
+            <!-- Back to Results Page -->
+            <a href="{{ url_for('analyze_results') }}" class="btn btn-warning btn-lg mt-3">Back to Results</a>
         </div>
-        <a href="{{ url_for('upload_file') }}" class="btn btn-primary">Back to Upload</a>
     </div>
 </body>
 </html>
-
