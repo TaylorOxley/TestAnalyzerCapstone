@@ -12,11 +12,11 @@
             var resultSections = document.getElementsByClassName("player-results");
 
             for (var i = 0; i < resultSections.length; i++) {
-                resultSections[i].style.display = "none"; // Hide all sections
+                resultSections[i].style.display = "none";
             }
 
             if (selectedPlayer !== "") {
-                document.getElementById(selectedPlayer).style.display = "block"; // Show selected player's results
+                document.getElementById(selectedPlayer).style.display = "block";
                 fillEmailFields(selectedPlayer);
             }
         }
@@ -24,13 +24,12 @@
         function fillEmailFields(playerName) {
             let subjectField = document.getElementById("subject");
             let messageField = document.getElementById("message");
-            let resultsData = JSON.parse('{{ results | tojson | safe }}'); // Convert Flask data to JavaScript object
-            let fileName = "{{ file_name }}"; // Get file name from Flask
+            let resultsData = JSON.parse('{{ results | tojson | safe }}');
+            let fileName = "{{ file_name }}";
 
             if (resultsData[playerName]) {
                 let playerResults = resultsData[playerName];
 
-                // Construct email message format
                 let emailMessage = `Attached below are the test results of ${fileName} for ${playerName}\n\n`;
                 emailMessage += `Score: ${playerResults.percentage}%\n`;
                 emailMessage += `Grade: ${playerResults.grade}\n\n`;
@@ -47,7 +46,6 @@
                     emailMessage += `Correct Answer: ${item[1]}\n\n`;
                 });
 
-                // Set email fields
                 subjectField.value = `Test Results for ${playerName}`;
                 messageField.value = emailMessage;
             }
@@ -56,8 +54,6 @@
         function formatEmail() {
             let emailInput = document.getElementById("receiver_email");
             let mixUsername = emailInput.value.trim();
-            
-            // Ensure the entered value is not already a full email
             if (!mixUsername.includes("@")) {
                 emailInput.value = mixUsername + "@mix.wvu.edu";
             }
@@ -114,6 +110,11 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- PDF Download Button -->
+            <div class="text-center mt-4">
+                <a href="{{ url_for('download_pdf', player=player) }}" class="btn btn-secondary">Download as PDF</a>
+            </div>
         </div>
         {% endfor %}
 
@@ -121,26 +122,31 @@
         <div class="card bg-white text-dark p-4 shadow-lg border-0 rounded">
             <h3 class="text-warning text-center">Send Results via Email</h3>
             <form action="{{ url_for('send_email') }}" method="POST" onsubmit="formatEmail()">
-                <!-- Hardcoded sender email -->
+                <!-- Sender Email -->
                 <div class="mb-3">
                     <label for="sender_email" class="form-label text-dark">Your Email</label>
                     <input type="email" id="sender_email" name="sender_email" class="form-control bg-light text-dark border-0" value="testanalyzercapstone1@gmail.com" readonly>
                 </div>
-                
-                <!-- Recipient Email (Mix Username Only) -->
+
+                <!-- Recipient Email -->
                 <div class="mb-3">
                     <label for="receiver_email" class="form-label text-dark">Recipient Mix Username</label>
                     <input type="text" id="receiver_email" name="receiver_email" class="form-control bg-light text-dark border-0" placeholder="Enter Mix username (e.g., tjo00004)" required>
                 </div>
-                
+
+                <!-- Subject -->
                 <div class="mb-3">
                     <label for="subject" class="form-label text-dark">Subject</label>
                     <input type="text" id="subject" name="subject" class="form-control bg-light text-dark border-0" required>
                 </div>
+
+                <!-- Message -->
                 <div class="mb-3">
                     <label for="message" class="form-label text-dark">Message</label>
                     <textarea id="message" name="message" class="form-control bg-light text-dark border-0" rows="6" required></textarea>
                 </div>
+
+                <!-- Send Button -->
                 <button type="submit" class="btn btn-warning w-100">Send Email</button>
             </form>
         </div>
@@ -150,6 +156,5 @@
             <a href="{{ url_for('upload_file') }}" class="btn btn-primary btn-lg">Upload Another File</a>
         </div>
     </div>
-
 </body>
 </html>
