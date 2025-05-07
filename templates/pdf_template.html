@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1, h2 { color: #004085; }
+        .correct { color: green; }
+        .incorrect { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Test Results</h1>
+    <p><strong>File:</strong> {{ file_name }}</p>
+    <p><strong>Player:</strong> {{ player }}</p>
+    <p><strong>Score:</strong> {{ percentage }}%</p>
+    <p><strong>Grade:</strong> {{ grade }}</p>
+
+    <h2 class="correct">Correct Answers</h2>
+    <ul>
+        {% for question, answer in correct_answers %}
+            <li><strong>Q:</strong> {{ question }}<br><strong>Correct Answer:</strong> {{ answer }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2 class="incorrect">Incorrect Answers</h2>
+    <ul>
+        {% for question, answer in incorrect_answers %}
+            <li><strong>Q:</strong> {{ question }}<br><strong>Correct Answer:</strong> {{ answer }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
